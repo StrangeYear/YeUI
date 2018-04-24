@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cell-form-page/index",
+    "pages/calendar-page/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "YeUI",
+    "navigationBarTextStyle": "black"
+  }
+}

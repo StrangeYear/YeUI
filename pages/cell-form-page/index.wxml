@@ -1,0 +1,3 @@
+<!--pages/cell-form-page/index.wxml-->
+
+<cell-form title='测试CellForm' list='{{list}}'></cell-form>

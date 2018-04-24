@@ -1,0 +1,131 @@
+/* component/Calendar/index.wxss */
+
+.calendar {
+  position: fixed;
+  bottom: 0;
+  transform: translateY(400px);
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+}
+
+.calendar-panel {
+  display: flex;
+  justify-content: space-around;
+}
+
+.calendar-panel-header {
+  display: flex;
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  background-color: #fbf9fe;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.calendar-panel-header-left {
+  padding-left: 15px;
+  color: #828282;
+}
+
+.calendar-panel-header-title {
+  flex: 1;
+  text-align: center;
+  color: #222;
+}
+
+.calendar-panel-header-right {
+  padding-right: 15px;
+  color: #3cb371;
+}
+
+.calendar-panel>view {
+  position: relative;
+  float: left;
+  width: 50%;
+  text-align: center;
+  overflow: hidden;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.calendar-panel-icon-box {
+  position: absolute;
+  display: inline-block;
+  padding: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.calendar-panel-icon-box-left {
+  top: 0;
+  left: 0;
+}
+
+.calendar-panel-icon-box-right {
+  right: 0;
+}
+
+.calendar-panel-icon {
+  position: absolute;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #c0c0c0;
+  border-radius: 0;
+  border-top: none;
+  border-right: none;
+  line-height: 40px;
+}
+
+.calendar-panel-prev-icon {
+  left: 15px;
+  top: 14px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.calendar-panel-next-icon {
+  transform: rotate(-135deg);
+  top: 14px;
+  right: 15px;
+}
+
+.calendar-tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar-th, .calendar-td {
+  padding: 3px 3px;
+  text-align: center;
+  width: 100%;
+  font-family: -apple-system-font, Helvetica Neue, sans-serif;
+}
+
+.calendar-th {
+  font-size: 16px;
+}
+
+.calendar-td {
+  font-size: 14px;
+}
+
+.calendar-date-selected {
+  color: #fff !important;
+  background: #3cb371;
+  border-radius: 50%;
+}
+
+.calendar-date-not-accord {
+  color: #c7c7c7;
+}
+
+.calendar-td-text {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+}

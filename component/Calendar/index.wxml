@@ -1,0 +1,40 @@
+<!--component/Calendar/index.wxml-->
+<view class="calendar" animation="{{animationData}}" >
+  <view class='calendar-panel-header'>
+    <view class='calendar-panel-header-left' bindtap='hideCalendarSelect'>取消</view>
+    <view class='calendar-panel-header-title'>请选择日期</view>
+    <view class='calendar-panel-header-right' bindtap='submitDates'>确定</view>
+  </view>
+
+  <view class="calendar-panel">
+    <view class="calendar-year">
+      <view class='calendar-panel-icon-box calendar-panel-icon-box-left' bindtap='_subtractYear'>
+        <view class='calendar-panel-prev-icon calendar-panel-icon'></view>
+      </view>
+      {{year}}
+      <view class='calendar-panel-icon-box calendar-panel-icon-box-right' bindtap='_addYear'>
+        <view class='calendar-panel-next-icon calendar-panel-icon'></view>
+      </view>
+    </view>
+    <view class="calendar-month">
+      <view class='calendar-panel-icon-box calendar-panel-icon-box-left' bindtap='_subtractMonth'>
+        <view class='calendar-panel-prev-icon calendar-panel-icon'></view>
+      </view>
+      {{month+1}}
+      <view class='calendar-panel-icon-box calendar-panel-icon-box-right' bindtap='_addMonth'>
+        <view class='calendar-panel-next-icon calendar-panel-icon'></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="calendar-tr">
+    <view class='calendar-td' wx:for='{{weeks}}' wx:key='index'>{{item}}</view>
+  </view>
+
+  <view class="calendar-tr" wx:if='{{calendarData.length}}' wx:for='{{calendarData}}' wx:for-item="tr" wx:for-index="weekIndex" wx:key='tr.index'>
+    <view class='calendar-td' wx:for='{{tr.calendarDataRow}}' wx:for-item="td" wx:for-index="dateIndex" wx:key='td.index'>
+      <view class='calendar-td-text {{td.selected?"calendar-date-selected":""}} {{!td.canClick||!td.accord?"calendar-date-not-accord":""}}' data-selectdate='{{td.formatDateStr}}' data-weekindex='{{weekIndex}}' data-dateindex='{{dateIndex}}' data-canclick='{{td.canClick}}'
+        bindtap='_changeSelectDates'>{{td.formatDay}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,50 @@
+/* component/CellForm/index.wxss */
+
+.cell-form-box {
+  position: relative;
+  background-color: white;
+  padding: 0 2.5%;
+  margin-bottom: 10px;
+}
+
+.cell-form-title {
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px dashed #eee;
+}
+
+.cell-form-content {
+  padding: 10px 0;
+  color: #999;
+  font-size: 14px;
+}
+
+.cell-form-label {
+  font-size: 1em;
+  text-align: right;
+  color: #999;
+  line-height: 2; 
+}
+
+.cell-form-label-left {
+  float: left;
+  margin-right: 1em;
+  min-width: 4em;
+  max-width: 10em;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.cell-form-label-right {
+  word-break: normal;
+  word-wrap: break-word;
+}
+
+.displayNone {
+  display: none !important;
+}
+
+.displayShow {
+  display: flex !important;
+}

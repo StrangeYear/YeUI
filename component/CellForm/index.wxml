@@ -1,0 +1,14 @@
+<!--component/CellForm/index.wxml-->
+<view class='cell-form-box'>
+  <view class='cell-form-title' wx:if="{{title.length}}">{{title}}</view>
+  <view class='cell-form-content'>
+    <view class='cell-form-label' wx:for='{{list}}' wx:key='{{item.key}}'>
+      <label class='cell-form-label-left'>
+        {{item.key}}
+      </label>
+      <view class='cell-form-label-right'>
+        {{item.value}}
+      </view>
+    </view>
+  </view>
+</view>

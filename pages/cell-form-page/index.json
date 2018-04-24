@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "CellForm组件",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "cell-form": "/component/CellForm/index"
+  }
+}

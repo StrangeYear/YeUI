@@ -1,0 +1,3 @@
+<!--pages/index/index.wxml-->
+<navigator class='component-link' url='/pages/calendar-page/index'>日历组件</navigator>
+<navigator class='component-link' url='/pages/cell-form-page/index'>CellForm组件</navigator>

@@ -1,0 +1,5 @@
+/* pages/cell-form-page/index.wxss */
+page{
+  padding-top: 50px;
+  background: rgb(200, 200, 200)
+}

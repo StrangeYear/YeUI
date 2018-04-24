@@ -1,0 +1,10 @@
+<!--pages/calendar-page/index.wxml-->
+<button class='calendar-btn' bindtap='showCalendarSelect'>显示日历</button>
+
+<view class='calendar-text'>{{calendar.selectDates}}</view>
+
+<!-- 这里有个很奇怪的问题，如果没有input组件的话，日历组件的显示动画不会生效 -->
+<input></input>
+
+<calendar wx:if='{{showCalendar}}' id="calendar" calendar='{{calendar}}' bind:submitDates='getSelectDates' bind:hideCalendarSelect='hideCalendarSelect'>
+</calendar>
