@@ -3,7 +3,7 @@
 
 ## 日历组件
 
-<img src="https://github.com/monian1916/wordpress-theme-Yilia/blob/master/screenshot.png?raw=true"/> 
+<img src="https://github.com/StrangeYear/YeUI/blob/master/calendar.png?raw=true"/> 
 
 wxml页面：
 ```
@@ -59,7 +59,7 @@ methods:
 ```
 
 ## CellForm组件
-
+<img src="https://github.com/StrangeYear/YeUI/blob/master/cellform.png?raw=true"/> 
 wxml:
 
 ```
