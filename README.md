@@ -3,6 +3,8 @@
 
 ## 日历组件
 
+<img src="https://github.com/monian1916/wordpress-theme-Yilia/blob/master/screenshot.png?raw=true"/> 
+
 wxml页面：
 ```
 <calendar wx:if='{{showCalendar}}' id="calendar" calendar='{{calendar}}' bind:submitDates='getSelectDates' bind:hideCalendarSelect='hideCalendarSelect'>
